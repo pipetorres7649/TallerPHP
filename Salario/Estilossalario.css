@@ -1,0 +1,76 @@
+body {
+    background: #f2f7fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 40px 0;
+}
+.salario-form-container {
+    max-width: 420px;
+    margin: 40px auto 0 auto;
+    padding: 0 12px;
+}
+.salario-form {
+    background: #fff;
+    border: 2px solid #dbeafe;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #dbeafe;
+    padding: 32px 26px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.salario-form h2 {
+    text-align: center;
+    color: #115688;
+    margin-bottom: 22px;
+    font-size: 1.35em;
+    font-weight: bold;
+}
+.salario-form label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 13px;
+    color: #17405e;
+}
+.salario-form input[type="text"],
+.salario-form input[type="number"] {
+    border: 1.5px solid #c4ddf6;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    background: #f7fafd;
+    transition: border 0.2s;
+}
+.salario-form input:focus {
+    border: 2px solid #247fd4;
+    outline: none;
+}
+.salario-form input[readonly] {
+    background: #efefef;
+    color: #747474;
+}
+.salario-form button {
+    background-color: #247fd4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 0;
+    font-size: 1.09em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: background 0.2s;
+}
+.salario-form button:hover {
+    background-color: #155185;
+}
+@media (max-width: 480px) {
+    .salario-form-container {
+        max-width: 97vw;
+        padding: 0;
+    }
+    .salario-form {
+        padding: 18px 6vw 18px 6vw;
+    }
+}
